@@ -9,7 +9,7 @@ RSpec.describe 'Books', type: :request do
   let(:books) { [ruby_microscope, rails_tutorial, agile_web_dev] }
 
   describe 'GET /api/books' do
-    before {books}
+    before { books }
 
     context 'default behavior' do
       before { get '/api/books' }
